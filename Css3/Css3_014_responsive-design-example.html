@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css3 Responsive Design Example</title>
+
+    <style>
+        div{
+            box-sizing: border-box;
+            background-color: darkgoldenrod;
+            float: left;
+            border: 1px solid green;
+            width: 20%;
+            height: 300px;
+        }
+        @media screen and (max-width:900px){
+            .media{
+                width: 25%;
+                background-color: chocolate;
+            }
+            img{
+                opacity: 0.8;
+            }
+        }
+        @media screen and (max-width:750px){
+            .media{
+                width: 50%;
+                background-color: darkred;
+            }
+            img{
+                opacity: 0.6;
+            }
+        }
+        @media screen and (max-width:500px){
+            .media{
+                width: 50%;
+                background-color: darkblue;
+            }
+            img{
+                opacity: 0.4;
+            }
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Responsive Design Tutorials</h1>
+    <hr>
+
+    <div class="media"><img src="../Html5/image/ArkaPlan3.jpg" alt=""></div>
+    <div class="media"><img src="../Html5/image/ArkaPlan3.jpg" alt=""></div>
+    <div class="media"><img src="../Html5/image/ArkaPlan3.jpg" alt=""></div>
+    <div class="media"><img src="../Html5/image/ArkaPlan3.jpg" alt=""></div>
+    <div class="media"><img src="../Html5/image/ArkaPlan3.jpg" alt=""></div>
+</body>
+</html>

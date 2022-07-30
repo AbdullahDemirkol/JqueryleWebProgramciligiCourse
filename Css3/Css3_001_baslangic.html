@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css3 Nedir</title>
+    <!-- Not: Head kısmında yapılan external css importu ile internal css importu arasında hangisi 
+        daha sonra yazılmışsa o aktif olur. Fakat inline css en aktif olanıdır. -->
+
+    <!-- external css import -->
+    <link rel="stylesheet" href="Css/style.css">
+
+    <style>
+        /* internal css */
+        p{
+            font-size: 25px;
+            color: red;
+            border: 1px solid black;
+        }
+        body{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline css -->
+    <h1 style="color: blue;">Lorem ipsum dolor sit amet.</h1>
+
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p style="color: yellow;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <hr>
+
+    <h2>Merhabalar External css</h2>
+
+</body>
+</html>

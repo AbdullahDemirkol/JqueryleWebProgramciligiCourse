@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>groupSelectors attributeSelector pseudoSelector</title>
+    <style>
+        /* ------------------------------------------------ */
+        /* groupSelectors */
+        /* *{
+            padding: 0;
+            margin:0;
+        } */
+        p,h5{
+            border: 1px solid blue;
+        }
+        div>p{
+            background-color: green;
+        }
+        
+        div.deneme{
+            font-size: 25px;
+        }
+
+        h3~p{
+            border: 1px solid red;
+        }
+        h5+p{
+            border: 1px solid purple;
+        }
+
+        /* ------------------------------------------------ */
+        /* attributeSelector */
+        input{
+            margin: 5px 0;
+        }
+        input[type="text"]{
+            background: red;
+        }
+        input[type="button"]{
+            background: green;
+        }
+        /* a[target="_blank"]{
+            font-size: 25px;
+        } */
+        
+        
+        /* ------------------------------------------------ */
+        /* pseudoSelector */
+         a{
+            border: 1px solid red;
+            text-decoration: none;
+            padding: 8px 9px;
+            width: 16px;
+            margin: 12px;
+        }
+        a:link{
+            color: green;
+        }
+        a:hover{
+            background-color: orange;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:active{
+            color: red;
+        }
+        p.akademi:after{
+            content: " -BTK Akademi";
+        }
+        p.akademi:before{
+            content: "BTK Akademi- ";
+        }
+    </style>
+</head>
+<body>
+    <h1> groupSelectors ==> * + ~ ></h1>
+    <hr>
+
+    <div>
+        <p>lorem10</p>
+        <p>lorem10</p>
+    </div>
+
+    <div class="deneme">
+        <p>lorem5</p>
+    </div>
+
+    <div>
+        <h5>Merhabalar H5</h5>
+    </div>
+
+    <p>1.p</p>
+    <p>2.p</p>
+
+    <h3>1.başlık</h3>
+    <h3>2.başlık</h3>
+
+    <p>H3 ile aynı seviyedeki tüm p ler</p>
+
+    <h5>2.H5</h5>
+    <p>H5'den sonraki p</p>
+
+    <hr>
+
+    <h1> attributeSelector ==> input[type="text"] </h1>
+    
+    
+    <hr>
+
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="button" value="button"><br>
+    <input type="password"><br>
+
+    <hr>
+    <h1> pseudoSelector ==> PseudoElement (::)  ,  PseudoClass (:)</h1>
+    <hr>
+    
+    <br>
+    <a href="" target="_blank">Link</a>
+    <a href="">Visited</a>
+    <a href="">Hover</a>
+    <a href="" target="_blank">Active</a>
+
+    <p class="akademi">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

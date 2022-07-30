@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css3 Class Id !important</title>
+
+    <style>
+        #f10{
+            font-size: 10px;
+        }
+        #f20{
+            font-size: 20px;
+        }
+        #f30{
+            font-size: 30px;
+        }
+        .global{
+            color: blue!important;
+            border: 2px dotted red;
+        }
+        .global2{
+            opacity: 0.7;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Class Id important</h1>
+    
+    <hr>
+
+    <p id="f10">Lorem ipsum dolor sit amet.</p>
+    <p id="f20">Lorem ipsum dolor sit amet.</p>
+    <p class="global" style="color: red;">Lorem ipsum dolor sit amet.</p>
+    <p class="global2">Lorem ipsum dolor sit amet.</p>
+    <p id="f30" class="global global2" >Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

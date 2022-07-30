@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css3 Transition Box-Shadow Display</title>
+    <style>
+        .cube{
+            box-sizing: border-box;
+            width: 150px;
+            height: 150px;
+            background: red;
+            display: inline-block;
+            margin-left: 12.5%;
+            margin-top: 15%;
+            color: white;
+            text-align: center;
+            transition: width 3s, height 3s, background 3s, transform 3s;
+            transition-delay: 2s;
+        }
+        .cube:hover{
+            width: 300px;
+            height: 300px;
+            /* transform: rotate(90deg); */
+            background-color: royalblue;
+        }
+        .ornek1{
+            box-shadow: 10px -8px 3px 4px black;
+        }
+        .ornek2{
+            box-shadow: 10px -8px 30px 4px black;
+        }
+        .ornek3{
+            box-shadow: 10px -8px 30px 40px black;
+        }
+        div p {
+            font-size: 45px;
+            text-shadow: 4px 4px 3px black;
+        }
+    </style>
+</head>
+<body>
+    
+<h1>Transition Box-Shadow Display</h1>
+<hr>
+
+<div>
+    <div class="cube ornek1"><p>text</p></div>
+    <div class="ornek2 cube"><p>text</p></div>
+    <div class="ornek3 cube"><p>text</p></div>
+</div>
+    
+</body>
+</html>

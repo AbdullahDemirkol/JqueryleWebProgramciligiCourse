@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css3 Navbar Example</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" integrity="sha384-fZCoUih8XsaUZnNDOiLqnby1tMJ0sE7oBbNk2Xxf5x8Z4SvNQ9j83vFMa/erbVrV" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="navbar-example.css">
+
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            
+        }
+        li{
+            display: inline-block;
+            background-color: black;
+            transition: background 1s;
+            box-shadow: 2px -3px 9px 1px black;
+            padding: 25px;
+        }
+        li:hover{
+            background-color: rgb(255, 0, 64);
+            opacity: 0.8;
+        }
+        li:hover>a,li:hover>i{
+            color: orange;
+        }
+
+        @media screen and (max-width:650px) {
+            li{
+                background-color: darkblue;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(0, 132, 255);
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+        i{
+            color: rgb(0, 132, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Navbar Example</h1>
+
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i><a href=""> Home</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href=""> Contact</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href=""> About</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css3 OverFlow Float</title>
+
+    <style>
+        .overflow{
+            background-color: orange;
+
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+
+            /* overflow: scroll; */
+
+            overflow: auto;
+
+            /* overflow: hidden; */
+        }
+        #firstDiv{
+            background-color: red;
+            float: left;
+
+        }
+        #secondDiv{
+            background-color: blue;
+            float: left;
+        }
+        #thirdDiv{
+            background-color: green;
+            float: right;
+        }
+        div{
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+        }
+        .clearfix-1{
+            clear: both;
+        }
+        .clearfix-2{
+            overflow: auto;
+        }
+        .clearfix-3::after{
+            content: "...";
+            clear: both;
+            display: table;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>OverFlow Float</h1>
+    <hr>
+
+    <div id="firstDiv"></div>
+    <div id="secondDiv"></div>
+    <div id="thirdDiv"></div>
+
+    <div class="overflow">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eveniet nisi totam iure illum tempora ipsum quo doloribus soluta quod perferendis voluptatibus suscipit, placeat consequuntur molestias dolore eaque sint quos.
+            Numquam nulla quibusdam, culpa suscipit sequi aperiam. Rerum ullam quae excepturi, mollitia soluta neque debitis aliquid sapiente laborum perferendis nihil error sint iure quas ad. Nesciunt sequi atque perferendis assumenda!
+        </p>
+    </div>
+
+    <div class="clearfix-2" style="width: 100%; height:300px; margin-top: 100px; border: 1px solid red;">
+        <img style="float:left; margin-right: 12px;" src="../Html5/image/ArkaPlan2.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia optio expedita vitae repellendus fugit soluta nam, voluptatem ut voluptatibus est animi ipsam sunt voluptatum magnam perspiciatis molestiae natus ab! Repudiandae!
+        A unde quis doloremque, vitae dolores fugit exercitationem, modi consectetur sapiente sunt quo officia molestias atque saepe optio porro ut maiores voluptatibus. Distinctio commodi mollitia dolorem, laborum omnis veniam voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi eius reiciendis mollitia pariatur iste, provident ut facere earum quasi delectus maxime est unde, exercitationem quas minima blanditiis labore asperiores.
+        Ad odit ullam doloribus eligendi consequatur commodi harum voluptatum repudiandae eaque aliquid error sed, soluta odio quos, quo non voluptas quam expedita saepe? Vitae quas sapiente id mollitia totam cupiditate?
+        At debitis corrupti temporibus aliquid voluptatum, sunt unde quia laudantium eum quas hic impedit, numquam nesciunt maiores quisquam nobis earum magnam dolores eos mollitia culpa non error soluta? Aut, veniam!
+        Placeat consequatur iste neque ea corrupti, obcaecati, eum maxime alias similique ex dicta necessitatibus quisquam laudantium sequi fugit voluptate. Quasi praesentium mollitia debitis voluptas quo rerum excepturi! Itaque, quae unde!
+        At, porro provident? Perspiciatis quod eligendi, ad perferendis sint eaque esse quasi culpa quisquam explicabo, debitis minima, accusamus repellat doloremque deleniti at ab. Ipsam quas veniam ut, natus ea adipisci.
+        Esse ducimus optio et, temporibus, officia eveniet quis blanditiis ipsa obcaecati tenetur ex atque ipsum nesciunt officiis. Doloribus facilis iusto officiis officia odio illo! Cumque quos maiores nemo fuga placeat!
+        Animi, dolore vitae expedita neque laudantium dicta in eum cumque ratione omnis cum facere voluptatibus accusamus hic deserunt magnam aspernatur fuga magni saepe aliquid? Repudiandae sint illum impedit accusantium error.
+        Placeat laboriosam iusto vero maiores excepturi temporibus fuga, perspiciatis praesentium ut! Nam in ipsam delectus fugiat quas maxime, consequatur enim, minima nobis voluptatum labore unde a! Minima eum nulla voluptatem.
+        Molestiae illum quidem labore, voluptatibus, ea dolor dolorem harum obcaecati magnam molestias consequuntur impedit itaque maiores excepturi quo fugit deleniti! Reiciendis ut repellat quidem aut quam libero aliquam minus quos.
+        Reiciendis, laudantium ex expedita debitis facere nisi rem, distinctio sed repellendus illum magnam. Quo ipsam esse, obcaecati ad sapiente nulla harum, maxime illo quis error atque ipsum, quia qui ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perferendis temporibus debitis alias consequuntur distinctio animi ad natus voluptas minima at, voluptatum omnis! Laudantium nam at iste mollitia, eveniet neque.
+        Itaque amet dolorem laudantium non nostrum maiores aliquid adipisci? Dolores laudantium unde blanditiis itaque commodi vel doloribus sapiente repellendus aliquid beatae omnis sequi nesciunt autem, accusantium mollitia magnam, temporibus dolorum!
+        Perspiciatis ad officiis nesciunt iusto est soluta omnis quo voluptatibus saepe possimus sapiente unde, nobis dolore error similique porro explicabo vel quisquam quis reprehenderit distinctio. Ipsa ullam voluptates aliquam quod!
+        Soluta enim distinctio unde explicabo. Aliquam repudiandae quos eum error necessitatibus. Repellendus assumenda, non iusto eveniet aut omnis illum. Sunt ipsa laborum labore, corrupti suscipit laudantium sint. Vitae, doloribus fugit?    </div>
+</body>
+</html>

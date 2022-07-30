@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css3 Font-Awesome Google-Font Opacity Box-Sizing Link</title>
+
+    <!-- Google-Font -->
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <!-- --------------------------------------------- -->
+    <!-- Font-Awesome -->
+
+    <!-- Alternatif-1 -->
+    <!-- <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet"> -->
+
+    <!-- Alternatif-2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script> -->
+
+    <style>
+        i{
+            font-size: 100px;
+            color: red;
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;;
+        }
+        img{
+            border: 1px solid black;
+            opacity: 0.5;
+        }
+
+
+        div>a{
+            
+            text-decoration: none;
+            font-size: 250%;
+            border-radius: 5%;
+            padding: 5px 15px;
+        }
+        #firstAnchor{
+            border: 1px solid #0069D9;
+            color: whitesmoke;
+            background-color: #0069D9;
+        }
+        #firstAnchor:hover{
+            color: #0069D9!important;
+            background-color: whitesmoke!important;
+        }
+        #secondAnchor{
+            border: 1px solid #5A6268;
+            color: whitesmoke;
+            background-color: #5A6268;
+        }
+        #secondAnchor:hover{
+            color: #5A6268!important;
+            background-color: whitesmoke!important;
+        }
+        #thirdAnchor{
+            border: 1px solid #157347;
+            color: whitesmoke;
+            background-color: #157347;
+        }
+        #thirdAnchor:hover{
+            color: #157347!important;
+            background-color: whitesmoke!important;
+        }
+
+
+        #kutu1{
+            background-color: red;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+
+            box-sizing: content-box;
+        
+            width: 200px;
+            height: 200px;
+
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid red;
+        } 
+        #kutu2{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+
+            box-sizing: border-box;
+
+            width: 200px;
+            height: 200px;
+
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Font-Awesome Google-Font Opacity Box-Sizing Link</h1>
+    <hr>
+    <i class="fas fa-ad"></i>
+    <i class="fab fa-500px"></i>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque maxime iste quasi, architecto asperiores vel!</p>
+    
+    <img src="../Html5/image/logo.png" alt="">
+    <br>
+    <br>
+    <div>
+        <a id="firstAnchor" href="">Link 1</a>
+        <a id="secondAnchor" href="">Link 2</a>
+        <a id="thirdAnchor" href="">Link 3</a>
+    </div>
+
+    <hr>
+    <div id="kutu1">Content-Box</div>
+    <div id="kutu2">Border-Box</div>
+
+</body>
+</html>
